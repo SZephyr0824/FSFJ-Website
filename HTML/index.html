@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羽石飞毽 - Feather Stones,Flying Jianzi</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+
+<body>
+    <div class="page-header-container">
+        <div class="page-header">
+            <div class="page-header-bar">
+                <ul class="left-entry">
+                    <li class="entry-element">
+                        <a href="index.html" class="left-entry-logo">
+                            <img src="../asset/index-logo.png" class="logo">
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="index.html">
+                            <span class="header-text">背景故事</span>
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="show-create.html">
+                            <span class="header-text">展示&创建</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right-entry">
+                    <li class="entry-element">
+                        <a href="thanks.html">
+                            <span class="header-text">致谢</span>                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 页眉部分 -->
+
+    <div class="page-content-container">
+        <div class="page-content">
+            <div class="content-cover">
+                <div class="cover-text">
+                    <div class="cover-text-tag">NFT</div>
+                    <div class="cover-text-main">羽石飞毽</div>
+                    <div class="cover-text-metro">Feather Stones,Flying Jianzi.</div>
+                </div>
+                <div class="carousel">
+                    <div class="container">
+                        <img src="../asset/pic-show-1.png">
+                        <img src="../asset/pic-show-2.png">
+                        <img src="../asset/pic-show-3.png">
+                        <img src="../asset/pic-show-4.png">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 封面部分 -->
+
+        <div class="page-content"><div class="splitline"></div></div>
+        <!-- 分割线 -->
+
+        <div class="page-content">
+            <h1>背景故事</h1>
+            <div class="storytable">
+                <div class="tabletablet">
+                    <p class="tablettext">上古之时，有一只神奇的燕子，名为宇惠</p>
+                    <img src="../asset/index-storypic-0.png" class="tabletpic">
+                </div>
+                <div class="tabletablet">
+                    <p class="tablettext">在她四海环游之际，曾无意在休憩的青石上掉落一根羽毛</p>
+                    <img src="../asset/index-storypic-0.png" class="tabletpic">
+                </div>
+                <div class="tabletablet">
+                    <p class="tablettext">神性的羽毛激活了这一片的青石，待等青石化作人形，却早已不见宇惠的身影</p>
+                    <img src="../asset/index-storypic-0.png" class="tabletpic">
+                </div>
+                <div class="tabletablet">
+                    <p class="tablettext">后来，误入此间玩乐的孩童们望见青石同“神羽”共舞之景，口口相传，遂成古时“踢毽子”一游戏</p>
+                    <img src="../asset/index-storypic-0.png" class="tabletpic">
+                </div>
+            </div>
+        </div>
+        <!-- 背景故事具体内容部分 -->
+    </div>
+    <!-- 主体内容部分 -->
+
+    <div class="page-footer-container">
+        <img src="../asset/project-logo.png" class="footer-image">
+        <p class="footer-text">FS·FJianzi - DeShis. @All rights reserved.</p>
+    </div>
+    <!-- 页脚部分 -->
+
+    <script>
+        // 显示图片下标
+        let index = 0
+
+        // 图片的数量
+        let imageCount = document.querySelectorAll(".carousel .container img").length
+
+        //更新图片的函数
+        function refresh() {
+            if (index<0) {
+                index = imageCount - 1
+                // 自动轮播的话，这里应该可以没有
+            } else if (index >= imageCount) {
+                index = 0
+            }
+
+            let carousel = document.querySelector(".carousel")
+            let width = getComputedStyle(carousel).width
+            width = Number(width.slice(0,-2))
+            //这个部分的截取没有看明白
+
+            carousel.querySelector(".container").style.left = index * width * -1 + "px"
+        }
+        
+        function createAuto() {
+            return setInterval(() => {
+                index++
+                refresh()
+            }, 3000)
+         }
+
+        // 自动滚动
+        let autoTimer = createAuto()
+
+        refresh()
+    </script>
+    <!-- 用到的动画 -->
+
+</body>
+</html>

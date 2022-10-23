@@ -1,0 +1,523 @@
+/* 共通部分-Start */
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* 通常一个块级元素实际所占宽高度=外边距（margin）+ 边界宽度(border-width) + 内边距（padding）+ 高度（height） /  宽度（width）
+  如果设置了border-box，实际所占宽高度 = 设置的高度（height）/ 设置的宽度（width）+ 外边距（margin） */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    color: #111;
+    background-color: #ffffff;
+    margin: 0;
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol";
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 36px;
+    padding-left: 1rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 24px;
+}
+
+li::marker {
+    content: '';
+}
+
+/* 页眉的设置-Start */
+.page-header-container {
+    border-bottom: 2px solid #D9D9D9;
+    height: 100px;
+    width:100%;
+}
+
+.page-header {
+    height:100px;
+    width:100%;
+    min-width: 1200px;
+    /* max-width: 1920px; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.page-header-bar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.left-entry {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.right-entry {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.entry-element {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.header-text {
+    font-size: 24px;
+}
+
+.left-entry-logo {
+    display: flex;
+    align-items: center;
+    height:88px;
+}
+
+.logo {
+    top:0;
+    bottom:0;
+    margin:auto;
+    width:156px;
+    height:88px;
+}
+/* 页眉的设置-End */
+
+.page-content-container {
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.page-content {
+    width:100%;
+    min-width: 1200px;
+    /* max-width: 1920px; */
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.splitline {
+    height: 2px;
+    background-color: #D9D9D9;
+}
+
+/* 页脚的设置-Start */
+.page-footer-container {
+    height: 400px;
+    width:100%;
+    min-width: 1200px;
+    margin-top: 2rem;
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-image {
+    padding-top: 4rem;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #9DA3AE;
+}
+/* 页脚的设置-End */
+
+/* 共通部分-End */
+
+
+
+/* Part-index.html-Start */
+
+/* 首页封面格局的设置-Start */
+.content-cover {
+    display:flex;
+    justify-content: space-between;
+}
+
+.cover-text {
+    width:50%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* 首页封面格局的设置-End */
+
+/* 首页封面轮播图的设置-Start */
+.carousel {
+    width:50%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.carousel .container {
+    width:100%;
+
+    position:relative;
+    left:0;
+
+    display: flex;
+
+    /* 过渡动画 */
+    transition: all 1s;
+}
+
+.carousel .container img {
+    width:100%;
+}
+/* 首页封面轮播图的设置-End */
+
+/* 首页封面文字的设置-Start */
+.cover-text-tag {
+    font-weight: 800;
+    font-size: 48px;  
+    padding-left: 512px;
+    z-index: 1;
+}
+
+.cover-text-main {
+    font-weight: 600;
+    font-size: 128px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.cover-text-metro {
+    font-weight: 300;
+    font-size: 36px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* 首页封面文字的设置-End */
+
+/* 首页故事版的设置-Start */
+.storytable {
+    width:100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabletablet {
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.tablettext {
+    width: 55%;
+}
+
+.tabletpic {
+    width:35%;
+}
+/* 首页故事版的设置-End */
+
+/* Part-index.html-End */
+
+
+
+/* Part-show-create.html-Start */
+
+/* 展示部分格局、尺寸、字体的设置-Start */
+.page-cabinet {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-column-left {
+    width: 300px;
+    padding-left: 4rem;
+}
+
+.side-column-right {
+    width: 300px;
+}
+
+.mid-picshow {
+    width: 600px;
+    height: 600px;
+}
+
+#serie-number {
+    font-size: 36px;
+    padding-bottom: 400px;
+
+    transition: all 0.2s;
+}
+
+#coOwner {
+    font-weight: 400;
+
+    transition: all 0.2s;
+}
+/* 展示部分格局、尺寸、字体的设置-End */
+
+/* 展示部分-轮播图-Start */
+.exhibition {
+    width: 600px;
+    height: 600px;
+
+    overflow: hidden;
+
+    position: relative;
+} 
+
+.exhibition .container {
+    width:100%;
+
+    position:relative;
+    left:0;
+
+    display: flex;
+
+    /* 过渡动画 */
+    transition: all 1s;
+}
+
+.exhibition .container img {
+    width:100%
+}
+
+.exhibition .shift .btn {
+    /* 绝对定位且垂直居中 */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    /* 字符水平垂直居中 */
+    line-height: 50px;
+    text-align: center;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    /* 不透明度 0.5 */
+    opacity: 0.5;
+}
+
+.exhibition .shift .left {
+    left: 20px;
+}
+
+.exhibition .shift .right {
+    right: 20px;
+}
+/* 展示部分-轮播图-End */
+
+/* 创建部分-左右分布的设置-Start */
+.create-board {
+    display: flex;
+}
+
+.create-tablet {
+    width:50%;
+    min-width: 600px;
+}
+
+.cabinet-left-align {
+    padding-left: 3rem;
+}
+
+.cabinet-right-align {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* 创建部分-左右分布的设置-End */
+
+/* 创建部分-左半边图片被选择的样式-Start */
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic-not-selected {
+    height: 160px;
+    width: 160px;
+
+    padding: 4px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    /* 过渡动画 */
+    transition: all 0.2s;
+
+    cursor: pointer;
+}
+
+.pic-selected {
+    border: 2px solid #FFCB3C;
+    border-radius: 10px;
+}
+/* 创建部分-左半边图片被选择的样式-End */
+
+/* 创建部分-右半边的设置-Start */
+.preview-table {
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: sticky;
+    top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.preview-section {
+    width:100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview-Main {
+    width: 100%;
+}
+
+.preview-moves-pic {
+    height: 180px;
+    width: 180px;
+}
+
+.both-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-plus-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 36px;
+    padding-right: 1rem;
+}
+
+.left-button {
+    width: 180px;
+    background-color: #80c2de;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.right-button {
+    width: 390px;
+    background-color: #A5C1CD;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+/* 创建部分-右半边的设置-End */
+
+/* 创建部分-帧序列图片的存放-Start */
+
+.seqContainer {
+    display: none;
+}
+/* 创建部分-帧序列图片的存放-End */
+
+/* Part-show-create.html-End */
+
+
+
+/* Part-thanks.html-Start */
+
+/* 致谢页需要特殊的content的格式-Start */
+.thank-content {
+    width:100%;
+    min-width: 1200px;
+    /* max-width: 1920px; */
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* 致谢页需要特殊的content的格式-End */
+
+/* 天幕部分-Start */
+.velarium-container {
+    width:100%;
+    min-width: 1200px;
+    height:140px;
+
+    margin-top: 4rem;
+
+}
+
+.velarium {
+    height:200px;
+    /* background-color: aquamarine; */
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.velarium img {
+    height:100%;
+}
+
+.flex-display {
+    display: flex;
+    flex-direction: column;
+}
+/* 天幕部分-End */
+
+/* 致谢文字部分的设置-Start */
+.thank-title {
+    font-size: 64px;
+    padding-left: 10rem;
+    margin-top:0;
+}
+
+.thank-para {
+    padding-left: 14rem;
+}
+/* 致谢文字部分的设置-End */
+
+/* Part-thanks.html-End */

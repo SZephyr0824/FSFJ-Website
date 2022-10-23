@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羽石飞毽 - Show&Create</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script type="text/javascript" src="../JS/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../JS/gif.js"></script>
+</head>
+
+<body>
+    <div class="page-header-container">
+        <div class="page-header">
+            <div class="page-header-bar">
+                <ul class="left-entry">
+                    <li class="entry-element">
+                        <a href="index.html" class="left-entry-logo">
+                            <img src="../asset/index-logo.png" class="logo">
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="index.html">
+                            <span class="header-text">背景故事</span>
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="show-create.html">
+                            <span class="header-text">展示&创建</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right-entry">
+                    <li class="entry-element">
+                        <a href="thanks.html">
+                            <span class="header-text">致谢</span>                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 页眉部分 -->
+
+    <div class="page-content-container">
+        <div class="page-content">
+            <div class="page-cabinet">
+                <div class="side-column-left">
+                    <p id="serie-number">#110905</p>
+                    <p id="CoOwner">Co-Owner: SZephyr</p>
+                </div>
+                <div class="exhibition">
+                    <div class="container">
+                        <img src="../asset/DoneGif/N-110905.gif">
+                        <img src="../asset/DoneGif/N-010606.gif">
+                    </div>
+                    <div class="shift">
+                        <div class="btn left" onclick="leftShift()">&lt;</div>
+                        <div class="btn right" onclick="rightShift()">&gt;</div>
+                    </div>
+                </div>
+                <div class="side-column-right"></div>
+            </div>
+        </div>
+        <!-- 展示部分 -->
+
+        <div class="page-content"><div class="splitline"></div></div>
+        <!-- 分割线 -->
+
+        <div class="page-content">
+            <h1>NFT创建</h1>
+            <div class="create-board">
+                <div class="create-tablet cabinet-left-align">
+                    <h2>背景</h2>
+                    <div class="choices">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                    </div>
+                    <h2>毽子和脱尾</h2>
+                    <div class="choices">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                    </div>
+                    <h2>初始动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/SPic-Pan.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/SPic-Beng.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ke.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Guai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Mo.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FB.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FI.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FH.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-BK.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FT.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Rao.png" class="pic-not-selected">
+                    </div>
+                    <h2>承接动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/Spic-Pan-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Beng-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ke-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Guai-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Mo-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FB-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FI-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FH-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-BK-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FT-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-QX.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Shuai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Rao-2.png" class="pic-not-selected">
+                    </div>
+                    <h2>终结动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/Spic-Chuai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Bei.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Gou.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-TK.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-FGT.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-360.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-DT.png" class="pic-not-selected">
+                    </div>
+                </div>
+                <!-- 创建左半边选择的部分 -->
+
+                <div class="create-tablet cabinet-right-align">
+                    <div class="preview-table">
+                        <div>
+                            <img src="../asset/index-storypic-0.png" class="preview-Main">
+                        </div>
+                        <div class="preview-section">
+                            <img src="../asset/blankgrey.png" class="preview-moves-pic">
+                            <img src="../asset/blankgrey.png" class="preview-moves-pic">
+                            <img src="../asset/blankgrey.png" class="preview-moves-pic">
+                        </div>
+                        <div class="preview-section">
+                            <div class="both-align left-button" id="reset-button">
+                                <div class="icon-plus-text">
+                                    <img src="../asset/icon-reset-4x.png" class="icon">
+                                    <p>重置</p>
+                                </div>
+                            </div>
+                            <div class="both-align right-button" id="download-button">
+                                <div class="icon-plus-text">
+                                    <img src="../asset/icon-download-4x.png" class="icon">
+                                    <p>下载</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 创建右半边预览的部分 -->
+            </div>
+        </div>
+        <!-- 创建部分 -->
+    </div>
+    <!-- 主体部分 -->
+
+    <div class="page-footer-container">
+        <img src="../asset/project-logo.png" class="footer-image">
+        <p class="footer-text">@FS·FJianzi - DeShis. All rights reserved.</p>
+    </div>
+    <!-- 页脚部分 -->
+
+    <div>
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0031.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0032.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0033.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0034.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0035.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0036.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0037.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0038.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0039.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0040.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0041.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0042.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0043.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0044.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0045.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0046.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0047.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0048.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0049.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0050.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0051.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0052.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0053.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0054.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0055.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0056.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0057.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0058.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0059.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0060.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0061.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0062.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0063.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0064.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0065.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0066.png" class="imgSeq-1-1">
+        </div>
+        <!-- imgSeq-1-1 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2001.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2002.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2003.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2004.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2005.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2006.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2007.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2008.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2009.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2010.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2011.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2012.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2013.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2014.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2015.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2016.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2017.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2018.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2019.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2020.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2021.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2022.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2023.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2024.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2025.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2026.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2027.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2028.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2029.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2030.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2031.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2032.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2033.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2034.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2035.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2036.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2037.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2038.png" class="imgSeq-1-11">
+        </div>
+        <!-- imgSeq-1-11 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0518.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0519.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0520.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0521.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0522.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0523.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0524.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0525.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0526.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0527.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0528.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0529.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0530.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0531.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0532.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0533.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0534.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0535.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0536.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0537.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0538.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0539.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0540.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0541.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0542.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0543.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0544.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0545.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0546.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0547.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0548.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0549.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0550.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0551.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0552.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0553.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0554.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0555.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0556.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0557.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0558.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0559.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0560.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0561.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0562.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0563.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0564.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0565.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0566.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0567.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0568.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0569.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0570.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0571.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0572.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0573.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0574.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0575.png" class="imgseq-2-6">
+        </div>
+        <!-- imgSeq-2-6 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1112.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1113.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1114.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1115.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1116.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1117.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1118.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1119.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1120.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1121.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1122.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1123.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1124.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1125.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1126.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1127.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1128.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1129.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1130.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1131.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1132.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1133.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1134.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1135.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1136.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1137.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1138.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1139.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1140.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1141.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1142.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1143.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1144.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1145.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1146.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1147.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1148.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1149.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1150.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1151.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1152.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1153.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1154.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1155.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1156.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1157.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1158.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1159.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1160.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1161.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1162.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1163.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1164.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1165.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1166.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1167.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1168.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1169.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1170.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1171.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1172.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1173.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1174.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1175.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1176.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1177.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1178.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1179.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1180.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1181.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1182.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1183.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1184.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1185.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1186.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1187.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1188.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1189.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1190.png" class="imgSeq-2-9">
+        </div>
+        <!-- imgSeq-2-9 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1772.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1773.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1774.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1775.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1776.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1777.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1778.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1779.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1780.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1781.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1782.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1783.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1784.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1785.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1786.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1787.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1788.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1789.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1790.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1791.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1792.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1793.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1794.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1795.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1796.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1797.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1798.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1799.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1800.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1801.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1802.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1803.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1804.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1805.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1806.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1807.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1808.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1809.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1810.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1811.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1812.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1813.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1814.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1815.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1816.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1817.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1818.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1819.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1820.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1821.png" class="imgSeq-3-5">
+        </div>
+        <!-- imgSeq-3-5 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1842.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1843.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1844.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1845.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1846.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1847.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1848.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1849.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1850.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1851.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1852.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1853.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1854.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1855.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1856.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1857.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1858.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1859.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1860.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1861.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1862.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1863.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1864.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1865.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1866.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1867.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1868.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1869.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1870.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1871.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1872.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1873.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1874.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1875.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1876.png" class="imgSeq-3-6">
+        </div>
+        <!-- imgSeq-3-6 -->
+
+    </div>
+    <!-- 愚蠢的图片存放 -->
+
+    <script>
+
+        // 显示图片下标
+        let index = 0
+
+        // 图片的数量
+        let imageCount = document.querySelectorAll(".exhibition .container img").length
+
+        //更新图片的函数
+        function refresh() {
+            if (index<0) {
+                index = imageCount - 1
+                // 自动轮播的话，这里应该可以没有
+            } else if (index >= imageCount) {
+                index = 0
+            }
+
+            let carousel = document.querySelector(".exhibition")
+            let width = getComputedStyle(carousel).width
+            width = Number(width.slice(0,-2))
+            //这个部分的截取没有看明白
+
+            //添加修改“#XXXXXX”和“Co-Owner“内容的语句”
+            if (index == 0) {
+                document.getElementById("serie-number").innerHTML = "#110905"
+                document.getElementById("CoOwner").innerHTML = "Co-Owner:SZephyr"
+            } else if (index == 1){
+                document.getElementById("serie-number").innerHTML = "#010606"
+                document.getElementById("CoOwner").innerHTML = "Co-Owner:DeShis"
+            }
+
+            carousel.querySelector(".container").style.left = index * width * -1 + "px"
+        }
+
+        let refreshWrapper = (func) => {
+            // refresh 装饰器
+            return function (...args) {
+                let result = func(...args)
+                refresh()
+
+                // 重置自动滚动
+                // clearInterval(autoTimer)
+                // autoTimer = createAuto()
+                // return result
+                // 本轮播图不需要自动滚动，所以这部分代码被注释了
+
+            }
+        }
+
+        let leftShift = refreshWrapper(() => {
+            index--
+        })
+
+        let rightShift = refreshWrapper(() => {
+            index++
+        })
+
+        refresh()
+    </script>
+    <!-- 轮播图用到的动画 -->
+
+    <script type="text/javascript" src="../JS/sc-interaction.js"></script>
+    <!-- 引入用jquery写的交互 -->
+
+    <!-- <script type="text/javascript" src="../JS/gifMaker.js"></script> -->
+    <!-- gifMaker可能确实不需要了，写在sc-ineraction里面了 -->
+</body>
+</html>

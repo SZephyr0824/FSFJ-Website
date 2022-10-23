@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尝试获取图片</title>
+</head>
+<body>
+    <template>
+        <div id="app">
+            <li v-for="(img, index) in images" :key="index">
+            <p>img: {{ img }}</p>
+            <img :src="imgUrl(img)" alt="" />
+            </li>
+        </div>
+    </template>
+  
+    <script>
+        const req = require.context("../asset/MovesPngSequency/MPSS1/S1-Pan", false, /\.png$/)
+  
+        export default {
+            name: "App",
+            data() {
+                return {
+                    images: [],
+                }
+            },
+
+            created() {
+                this.images = req.keys()
+            },
+
+            methods: {
+                imgUrl(path) {
+                    return req(path)
+                    },
+                },
+            }
+
+    </script>
+  
+    <style>
+        img {
+        height: 300px;
+        }
+    </style>
+</body>
+</html> 
+
